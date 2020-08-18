@@ -11,16 +11,16 @@ import SimpleForm from '~/components/SimpleForm'
 
 export default {
   components: {
-    SimpleForm
+    SimpleForm,
   },
   computed: {
-    ...mapGetters('test', ['txt'])
+    ...mapGetters('test', ['txt']),
   },
   methods: {
     onSubmit(value) {
       this.$store.dispatch('test/saveTxt', { text: value })
-    }
-  }
+    },
+  },
 }
 </script>
 

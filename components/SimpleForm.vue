@@ -10,19 +10,19 @@ import BaseButton from './BaseButton'
 
 export default {
   components: {
-    BaseButton
+    BaseButton,
   },
   props: {
     initialValue: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
   data() {
     return {
-      value: this.initialValue
+      value: this.initialValue,
     }
-  }
+  },
 }
 </script>
 
@@ -30,7 +30,7 @@ export default {
 .input {
   text-align: center;
   margin-bottom: 1rem;
-  border: none;
+  //border: none;
   background: #f6f6f6;
   font-size: 1rem;
   font-weight: bold;
